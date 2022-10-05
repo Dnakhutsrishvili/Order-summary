@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Order summary card</title>
+
+
+  <style>
+    @font-face {
+  font-family:"Red Hat Display";
+  src: url(./fonts/Red_Hat_Display/static/RedHatDisplay-Black.ttf);
+}
+  body{
+    margin: 0;
+    background: #F2F2F2;
+    font-family: "Red Hat Display";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+
+  height: 567px;
+width: 327px;
+margin-top: 71px;
+border-radius: 20px;
+
+  background: #FFFFFF;
+box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+border-radius: 20px;
+}
+.img{
+  height: 160px;
+width: 327px;
+background: #382AE1;
+border-radius: 20px 20px 0px 0px;
+
+}
+.title{
+  margin: 0;
+  margin-top: 30px;
+
+font-style: normal;
+font-weight: 900;
+font-size: 22px;
+line-height: 29px;
+text-align: center;
+
+color: #1F2E55;
+}
+.paragraph{
+  margin: 0;
+  margin-top: 16px;
+  
+
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 25px;
+/* or 167% */
+
+text-align: center;
+
+color: #717FA6;
+}
+
+.order{
+  height: 81px;
+width: 279px;
+margin: 0;
+margin-top: 24px;
+
+border-radius: 11px;
+
+  background: #F7F9FF;
+border-radius: 11px;
+
+margin-left: auto;
+margin-right: auto;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+.plan-title{
+  font-style: normal;
+font-weight: 900;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+margin: 0;
+margin-left: -18px;
+
+color: #1F2E55;
+}
+.plan-price{
+  font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+margin: 0;
+margin-left: -18px;
+
+color: #717FA6;
+}
+.tag{
+  font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 17px;
+text-decoration-line: underline;
+cursor: pointer;
+color: #382AE1;
+}
+.music{
+  height: 48px;
+width: 48px;
+}
+.btn{
+
+  background: #382AE1;
+box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+border-radius: 11px;
+height: 50px;
+width: 279px;
+
+font-style: normal;
+font-weight: 900;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+border: none;
+cursor: pointer;
+
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.cancel{font-style: normal;
+font-weight: 900;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height */
+margin: 0;
+cursor: pointer;
+margin-top: 24px;
+color: #717FA6;}
+
+
+@media only screen and (min-width: 600px) {
+  .container {
+    Width:450px;
+Height:697px;
+  }
+  .img{
+    height: 220px;
+width: 450px;
+ }
+ .title{
+  margin-top: 45px;
+
+font-weight: 900;
+font-size: 28px;
+line-height: 37px;
+ }
+ .paragraph{
+
+  font-size: 16px;
+line-height: 26px;
+ }
+
+ .order{
+  height: 98px;
+width: 354px;
+justify-content: space-between;
+ }
+ .music{
+  margin-left: 24px;
+ }
+ .tag{
+  margin-right: 24px;
+  font-size: 14px;
+line-height: 19px;
+ }
+ .plan{
+  margin-left: -64px;
+ }
+ .plan-price{
+  font-size: 16px;
+line-height: 21px;
+ }
+ .plan-title{
+  font-size: 16px;
+line-height: 21px;
+ }
+ .btn{
+  height: 50px;
+width: 354px;
+
+border-radius: 11px;
+
+ }
+ .cancel{
+  margin-top: 32px;
+ }
+ .flex{
+  margin-top: 32px;
+ }
+
+ .tag:hover{
+  font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #766CF1;
+ }
+
+ .btn:hover{
+  background: #766CF1;
+box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+border-radius: 11px;
+ }
+ .cancel:hover{
+  font-style: normal;
+font-weight: 900;
+font-size: 15px;
+line-height: 20px;
+/* identical to box height */
+
+
+color: #1F2E55;
+ }
+
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img class="img" src="./images/illustration-hero.svg" alt="dude"/>
+    <h1 class="title">Order Summary</h1>
+    <p class="paragraph">You can now listen to millions of songs,<br/> 
+      audiobooks, and podcasts on any <br/>
+      device anywhere you like!</p>
+
+      <div class="order"> 
+        <img class="music"  src="./images/icon-music.svg" alt="music"/>
+        <div class="plan">
+<p class="plan-title">Annual Plan</p>
+<p class="plan-price">$59.99/year</p>
+        </div>
+        <p class="tag">Change</p>
+        
+
+      </div>
+      <div class="flex">
+      <button class="btn">Proceed to Payment</button>
+      <h2 class="cancel">Cancel Order</h2>
+    </div>
+  </div>
+</body>
+</html>
